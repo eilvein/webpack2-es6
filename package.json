@@ -63,7 +63,8 @@
     "release": "NODE_ENV=production gulp release",
     "build": "NODE_ENV=production gulp build",
     "gulp": "gulp",
-    "watch": "gulp watch"
+    "watch": "gulp watch",
+    "deploy": "gulp deploy"
   },
   "keywords": [
     "roobo",
