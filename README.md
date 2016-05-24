@@ -54,8 +54,8 @@
 
 ```jsp
 module.exports = {
-    entry: {}, //路口
-    output: { }, //输出出口
+    entry: {}, //入口
+    output: { }, //出口
     module: {
         loaders: [ ]
     },
@@ -63,15 +63,36 @@ module.exports = {
         "presets": ["es2015"],
         "plugins": ["transform-runtime"]
     },
-    plugins: [ ],//编译的时候所执行的插件数组
-    vue: { },//vue的配置,需要单独出来配置
+    plugins: [ ], //编译的时候所执行的插件
+	resolve:{ }, //模块别名定义
+    vue: { }, //vue的配置,需要单独出来配置
     devtool : "source-map" //调试模式
 };
 ```
 
 
 
-
-
 ### TODO
+
+…...
+
+
+
+### Vue教程
+
+[细节与最佳实践](http://vuejs.org/guide/best-practices.html)
+
+[Vue1.0.x文档](http://vuejs.org/)
+
+[Vue1.0.x绑定语法参考](https://github.com/vuejs/vue/issues/1325)
+
+[每次更新的变化](https://github.com/vuejs/vue/releases)
+
+### webpack所需插件
+
+[vue-loader-example](https://github.com/vuejs/vue-loader-example)
+
+[vue-html-loader](https://github.com/vuejs/vue-html-loader)
+
+
 
