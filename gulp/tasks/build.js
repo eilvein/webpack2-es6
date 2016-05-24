@@ -133,10 +133,10 @@ module.exports = function (gulp, Plugin, config) {
 
     // push test server
     var configSSH = {
-        host: '123.57.49.228',
+        host: '123.57.49.111',
         port: 22,
         username: 'root',
-        password: 'Juan365Html5'
+        password: 'xxxxx'
         //privateKey: require('fs').readFileSync('/Users/lixinwei/.ssh/id_rsa')
     };
     var gulpSSH = new Plugin.GulpSSH({
@@ -169,4 +169,3 @@ module.exports = function (gulp, Plugin, config) {
 
 
 };
-
