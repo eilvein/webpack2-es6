@@ -47,6 +47,7 @@ const prodConfig = webpackMerge(webpackBaseConf, {
                     fallbackLoader: 'style-loader',
                     use: [
                         'css-loader?minimize&sourceMap&importLoaders=2',
+                        'postcss-loader',
                         'sass-loader?outputStyle=expanded&sourceMap&sourceMapContents'
                     ]
                 })
@@ -68,6 +69,7 @@ const prodConfig = webpackMerge(webpackBaseConf, {
         }),
         new webpack.optimize.CommonsChunkPlugin({
             name: 'vendors',
+            filename: 'js/vendors.[hash].js',
             minChunks: Infinity
         }),
         new ExtractTextPlugin({

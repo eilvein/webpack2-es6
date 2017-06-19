@@ -39,12 +39,14 @@ const dllConfig = {
                 exclude: /node_modules/
             },
             {
-                test: /\.(css|sass|scss)$/,
+                test: /\.(sass|scss)$/,
                 use: [
                     'style-loader',
                     'css-loader',
+                    'postcss-loader',
                     'sass-loader'
-                ]
+                ],
+                exclude: /node_modules/
             }
         ]
     },

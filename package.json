@@ -9,8 +9,8 @@
         "clean": "rimraf dist",
         "setup": "npm run clean && npm install",
         "dll": "webpack --progress --config webpack.dll.config.js",
-        "init": "webpack --progress --config webpack.dev.config.js",
-        "start": "npm run dll && npm run init",
+        "start": "webpack --progress --config webpack.dev.config.js",
+        "init": "npm run clean && npm run dll && npm run start",
         "dev": "webpack-dev-server --config webpack.dev.config.js",
         "build": "webpack --progress --hide-modules --config webpack.prod.config.js",
         "eslint": "eslint src"
@@ -20,11 +20,13 @@
         "webpack2",
         "es6",
         "eslint",
-        "sass"
+        "sass",
+        "postcss"
     ],
     "author": "Eilvein",
     "license": "MIT",
     "dependencies": {
+        "autoprefixer": "^7.1.1",
         "babel-core": "^6.25.0",
         "babel-eslint": "^7.2.3",
         "babel-loader": "^7.0.0",
@@ -42,6 +44,8 @@
         "html-webpack-plugin": "^2.28.0",
         "node-sass": "^4.5.3",
         "path": "^0.12.7",
+        "postcss-loader": "^2.0.6",
+        "precss": "^1.4.0",
         "rimraf": "^2.6.1",
         "sass-loader": "^6.0.5",
         "style-loader": "^0.18.2",

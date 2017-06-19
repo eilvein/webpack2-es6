@@ -10,6 +10,7 @@ Sample app demonstrating the power and simplicity of **Vue 2**, **React**, and *
 - [x] [Webpack 2.6](https://webpack.github.io)
 - [x] [Babel](https://babeljs.io/)
 - [x] [Sass](http://sass-lang.com/)
+- [x] [Postcss](http://postcss.org/)
 - [x] [todo](https://github.com/eilvein)
 
 Make sure you have the latest node before using Webpack 2. Some depenencies my fail in older versions.
@@ -18,6 +19,16 @@ Make sure you have the latest node before using Webpack 2. Some depenencies my f
 
 ```
 $ npm install
+$ or
+$ npm run setup
+```
+
+## Running in clean dist
+
+```
+$ npm run clean
+$ or unix command
+$ npm run clean:unix
 ```
 
 ## Running in init mode
