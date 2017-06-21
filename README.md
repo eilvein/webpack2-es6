@@ -1,4 +1,4 @@
-# ⚠️ A new version of this app is available 🎉
+# A new version of this app is available :fire:
 [A template project for es6/7, webpack2, sass, DllPlugin and DllReferencePlugin](https://github.com/eilvein/webpack2-es6.git).
 
 # Budgeting - Webpack Sample App
